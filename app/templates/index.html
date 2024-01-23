@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1-Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .search-container {
+            text-align: center;
+        }
+        .search-box {
+            padding: 10px 15px;
+            width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #4285f4;
+            color: white;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #357ae8;
+        }
+        .results {
+        margin-top: 20px;
+        max-height: 300px; /* Adjust the height as needed */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left; /* Align text to the left */
+        /* background-color: white; */
+        }
+    
+    .result {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #eee; /* Add a separator between results */
+        }
+    
+    .result:last-child {
+        border-bottom: none; /* Remove separator for the last result */
+         }
+
+        .sentence {
+            font-size: 16px;
+            color: #333;
+        }
+        .score {
+            font-size: 14px;
+            color: #666;
+        }
+        .score-words {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .validation-message {
+            color: red;
+            margin-top: 10px;
+        }
+        .loading-spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #4285f4;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>A1-Search</h1>
+        <form id="searchForm">
+            <input type="text" id="searchText" class="search-box" name="search_text" placeholder="Enter search text">
+            <input type="submit" class="submit-button" value="Search">
+            <div id="validationMessage" class="validation-message"></div> <!-- Validation message placeholder -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+<script>
+    document.getElementById('searchForm').onsubmit = function(event) {
+        event.preventDefault();
+        const searchText = document.getElementById('searchText').value;
+        const validationMessageDiv = document.getElementById('validationMessage');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+        
+        // Check if the search box is empty
+        if (!searchText.trim()) {
+            validationMessageDiv.innerText = 'Please enter text to search.'; // Display validation message
+            return; // Do not proceed further
+        } else {
+            validationMessageDiv.innerText = ''; // Clear validation message if search text is not empty
+            loadingSpinner.style.display = 'block'; // Show loading spinner
+        }
+    
+        // Proceed with the fetch request if the search text is not empty
+        fetch('/search', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 'search_text': searchText }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            loadingSpinner.style.display = 'none'; // Hide loading spinner when data is received
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+            data.forEach(result => {
+                // Create elements for sentence, score, and score words
+                const resultDiv = document.createElement("div");
+                resultDiv.className = 'result';
+                const sentenceP = document.createElement("p");
+                sentenceP.className = 'sentence';
+                sentenceP.innerHTML = `Rank ${result.rank} : ${result.sentence}`;
+    
+                // Append elements to the resultDiv
+                resultDiv.appendChild(sentenceP);
+    
+                // Append resultDiv to resultsDiv
+                resultsDiv.appendChild(resultDiv);
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            loadingSpinner.style.display = 'none'; // Hide loading spinner in case of error
+        });
+    };
+</script>
+    
+    
+</body>
+</html>
