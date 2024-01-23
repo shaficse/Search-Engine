@@ -20,7 +20,7 @@ A robust search engine utilizing word embedding models to deliver context-aware 
 
 
 ## Overview
-The Search Engine project is an application of information retrieval in natural language processing (NLP), focusing on building a search engine that operates over word embedding model, alongside a user-friendly web interface. The project is designed to return the top paragraphs/docs with the highest similarity to a given query.
+The Search Engine Project is an application of information retrieval in natural language processing (NLP), focusing on building a search engine that operates over word embedding model, alongside a user-friendly web interface. The project is designed to return the top paragraphs/docs with the highest similarity to a given query.
 
 This project encompasses several key tasks, including preparation and training of word embedding models, model comparison and analysis, and the development of a web-based search engine.
 
