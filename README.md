@@ -81,7 +81,7 @@ We extend our gratitude to the creators and maintainers of the Reuters dataset a
 #### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/shaficse/A1-Search-Engine.git
+   git clone https://github.com/shaficse/A1--Search-Engine.git
    ```
 2. Install the required Python packages:
    ```sh
