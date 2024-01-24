@@ -90,7 +90,7 @@ We extend our gratitude to the creators and maintainers of the Reuters dataset a
 
 ## Task-2 Model Comparison and Analysis
 
-The models were trained on a selected subset of the Reuters corpus from NLTK, containing 500 passages out of a total of 54,716, and 2678 tokens out of 1720917. The training performance was assessed based on the average training loss and the total time taken for training
+The models were trained on a selected subset of the Reuters corpus from NLTK, containing 500 passages out of a total of 54,716, and 2677 tokens out of 1720917. The training performance was assessed based on the average training loss and the total time taken for training
 
 ### 2.1. Training Loss & Time
 
@@ -219,15 +219,9 @@ Implement a function to compute the dot product between an input query and a cor
    4. View the ranked list of sentences that are most similar to your query.
 
    <img src="screenshots/app-1.png" width="600">
-   
+
    For example in the above Screenshot-  The presence of other less relevant passages in the top results highlights the need for improved precision in the model's information retrieval capabilities.
-## Application & Use-Cases
 
-The combination of these word embedding models and the interactive web interface provides a powerful toolkit for a wide range of natural language processing tasks, including but not limited to:
-
-- **Semantic Analysis**: Understand and quantify the semantic similarity between words or phrases within a corpus.
-
-- **Information Retrieval**: Improve search algorithms and recommendation systems by leveraging the nuanced understanding of word relationships.
 
 ## Contributing
 We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md)
