@@ -70,6 +70,7 @@ def load_corpus(file_path):
 # Load the corpus
 corpus = load_corpus(corpus_path)
 
+nltk.download('punkt')  # Download the Punkt tokenizer model for sentence splitting
 def preprocess(text):
     # Tokenizes the text into words and converts all characters to lowercase
     tokens = nltk.word_tokenize(text.lower())
