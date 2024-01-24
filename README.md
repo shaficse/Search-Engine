@@ -219,6 +219,7 @@ Implement a function to compute the dot product between an input query and a cor
    4. View the ranked list of sentences that are most similar to your query.
 
    <img src="screenshots/app-1.png" width="600">
+   
    For example in the above Screenshot-  The presence of other less relevant passages in the top results highlights the need for improved precision in the model's information retrieval capabilities.
 ## Application & Use-Cases
 
