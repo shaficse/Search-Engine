@@ -222,6 +222,8 @@ Implement a function to compute the dot product between an input query and a cor
 
    For example in the above Screenshot-  The presence of other less relevant passages in the top results highlights the need for improved precision in the model's information retrieval capabilities.
 
+   For Live Demo [A1-Search](https://huggingface.co/spaces/shaficse/a1-search)
+
 
 ## Contributing
 We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md)
