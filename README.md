@@ -170,7 +170,7 @@ The pre-trained GloVe model from Gensim showcases superior performance, signific
 
 
 - Future research directions may include enhancing custom-trained models by:
-   - Expanding the training corpus to expose the model to a more varied language.
+   - Expanding the training corpus to expose the model to a more varied text.
 
    - Optimizing model architectures/ tuning the parameters to improve their learning capacity.
 Refining training processes to ensure more effective learning.
