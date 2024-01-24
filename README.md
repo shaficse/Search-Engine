@@ -106,6 +106,11 @@ Comparison of Skip-gram, Skip-gram with Negative Sampling, and GloVe models base
 | Skip-gram with Negative Sampling | 1.977957             |
 | GloVe Scratch                        | 0.724803 |
 
+- **Training Loss:**
+- Skip-gram: Exhibited an average training loss of 8.133966, indicating room for optimization.
+- Skip-gram with Negative Sampling: Showed improved efficiency with a lower average training loss of 1.977957.
+- GloVe Scratch: Achieved the lowest training loss of 0.724803, indicating a more effective learning during training.
+
 #### Training Time
 
 | Model                          | Total Training Time |
@@ -114,11 +119,6 @@ Comparison of Skip-gram, Skip-gram with Negative Sampling, and GloVe models base
 | Skip-gram with Negative Sampling | 17m 8s             |
 | GloVe Scratch                    | 1m 54s              |
 
-
-- **Training Loss:**
-- Skip-gram: Exhibited an average training loss of 8.133966, indicating room for optimization.
-- Skip-gram with Negative Sampling: Showed improved efficiency with a lower average training loss of 1.977957.
-- GloVe Scratch: Achieved the lowest training loss of 0.724803, indicating a more effective learning during training.
 
 - **Training Time:**
 - Skip-gram: Took 18 minutes and 4 seconds for training.
