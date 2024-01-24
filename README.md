@@ -169,7 +169,7 @@ The Spearman's rank correlation analysis reveals varied performance among differ
 The pre-trained GloVe model from Gensim showcases superior performance, significantly aligning with human judgment in word similarities.
 
 
-- Future research directions may include enhancing custom-trained models by:
+Future research directions may include enhancing custom-trained models by:
    - Expanding the training corpus to expose the model to a more varied text.
 
    - Optimizing model architectures/ tuning the parameters to improve their learning capacity.
