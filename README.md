@@ -1,5 +1,5 @@
 
-# A1-Search Engine
+# A1--Search Engine
 A robust search engine utilizing word embedding models to deliver context-aware search results, enhancing information retrieval.
 
 ## Table of Contents

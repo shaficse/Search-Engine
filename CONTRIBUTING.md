@@ -9,11 +9,11 @@ First off, thank you for considering contributing to A1-Search Engine. It's peop
 
 This section guides you through submitting a bug report for A1-Search Engine. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
-Before submitting a bug report, please check the list of [open issues](https://github.com/shaficse/A1-Search-Engine/issues) to see if the bug has already been reported. If it has, add a comment to the existing issue instead of opening a new one.
+Before submitting a bug report, please check the list of [open issues](https://github.com/shaficse/A1--Search-Engine/issues) to see if the bug has already been reported. If it has, add a comment to the existing issue instead of opening a new one.
 
 #### How Do I Submit a Good Bug Report?
 
-Bugs are tracked as [GitHub issues](https://github.com/shaficse/A1-Search-Engine/issues). After you've determined which repository your bug is related to, create an issue and provide the following information:
+Bugs are tracked as [GitHub issues](https://github.com/shaficse/A1--Search-Engine/issues). After you've determined which repository your bug is related to, create an issue and provide the following information:
 
 - A clear and descriptive title.
 - A detailed description of the problem. Include screenshots if needed.
@@ -25,11 +25,11 @@ Bugs are tracked as [GitHub issues](https://github.com/shaficse/A1-Search-Engine
 
 This section guides you through submitting an enhancement suggestion for A1-Search Engine, including completely new features and minor improvements to existing functionality.
 
-Before creating enhancement suggestions, please check the [issues list](https://github.com/shaficse/A1-Search-Engine/issues) as you might find out that you don't need to create one.
+Before creating enhancement suggestions, please check the [issues list](https://github.com/shaficse/A1--Search-Engine/issues) as you might find out that you don't need to create one.
 
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/shaficse/A1-Search-Engine/issues). Provide the following information:
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/shaficse/A1--Search-Engine/issues). Provide the following information:
 
 - A clear and descriptive title.
 - A detailed description of the proposed feature. Include any documentation or screenshots.
