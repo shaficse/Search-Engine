@@ -179,7 +179,7 @@ The details of the Comparision and Analysis are experiemented on this notebook `
 
 ## Task-3 Search Engine - Web Application Development
 
-This Task introduces a web application designed to simplify the retrieval of information from a text corpus. Users can input search queries into a streamlined interface, which then utilizes one of our trained word embedding model to compute the similarity between the query and the corpus by computing the dot product between them. 
+This Task introduces a web application designed to simplify the retrieval of information from a text corpus. Users can input search queries into a streamlined interface, which then utilizes one of our trained word embedding model to compute the similarity between the query and the corpus by computing the dot product of them. 
 
 - **Model Selection**: 
 Implement a function to compute the dot product between an input query and a corpus, retrieving the top 10 most similar passages with a focus on semantic similarity. it's crucial to choose the right model.
