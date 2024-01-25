@@ -182,7 +182,7 @@ Implement a function to compute the dot product between an input query and a cor
 
 
    - Based on the priority of semantic similarity in the task and considering Spearman's rank correlation, Skip-gram is recommended. 
-   - Despite Skip-gram's longer training time and higher loss, its weak positive correlation with human judgment of word similarity suggests it may align slightly better with human semantic understanding.
+   - Despite Skip-gram's longer training time and higher loss, its modest positive correlation with human judgment of word similarity suggests it may align slightly better with human semantic understanding.
 
 - **Application Development**: Developed using Flask, a flexible micro web framework. Flask's simplicity and extensibility make it perfect for creating efficient, scalable web applications.
 
