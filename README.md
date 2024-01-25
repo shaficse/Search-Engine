@@ -11,7 +11,6 @@
   - [Getting Started](#15-getting-started)
 - [Task 2 Model Comparison and Analysis](#task-2-model-comparison-and-analysis)
 - [Task 3 Search Engine - Web Application Development](#task-3-search-engine---web-application-development)
-- [Application & Use-Cases](#application--use-cases)
 - [Contributing & Support](#contributing--support)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
