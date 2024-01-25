@@ -195,7 +195,7 @@ Implement a function to compute the dot product between an input query and a cor
 
    3. Input a search query and click "Search" or press 'Enter'.
 
-   4. View the ranked list of sentences most similar to your query.
+   4. View the ranked 10  most of the similar passages to your query.
 
    <img src="screenshots/app-1.png" width="600">
 
