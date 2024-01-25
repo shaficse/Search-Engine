@@ -168,9 +168,6 @@ The pre-trained GloVe model from Gensim showcases superior performance, signific
 Future research directions may include enhancing custom-trained models by:
    - Expanding the training corpus to expose the model to a more varied text.
 
-   - Optimizing model architectures/ tuning the parameters to improve their learning capacity.
-Refining training processes to ensure more effective learning.
-
 The details of the Comparision and Analysis are experiemented on this notebook `Task-2-Model-Comparison-Analysis.ipynb`.
 
 ## Task-3 Search Engine - Web Application Development
