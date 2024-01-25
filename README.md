@@ -211,4 +211,7 @@ Contributions are welcome. For issues or questions, please open an issue in the 
 This project is licensed under the MIT License.[LICENSE](LICENSE)
 
 ## Acknowledgments
-Full acknowledgments to the authors of the foundational research papers and the maintainers of the Reuters dataset and NLTK library.
+- Full acknowledgments to the authors of the foundational research papers.
+- Gratitude to [Chaklam Silpasuwanchai](https://github.com/chaklam-silpasuwanchai) for providing valuable resources. The code used in this project was inspired by and adapted from his repository on [Python for Natural Language Processing](https://github.com/chaklam-silpasuwanchai/Python-fo-Natural-Language-Processing).
+
+- The maintainers of the Reuters dataset and NLTK library.
