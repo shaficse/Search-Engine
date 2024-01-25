@@ -180,26 +180,9 @@ This Task introduces a web application designed to simplify the retrieval of inf
 - **Model Selection**: 
 Implement a function to compute the dot product between an input query and a corpus, retrieving the top 10 most similar passages with a focus on semantic similarity. it's crucial to choose the right model.
 
-   - Skip-gram:
-      - Training Loss/Time: High (8.133966)/Long (18m 4s)
-      - Spearman's Rank Correlation: Weak positive (0.105)
 
-      Note: Despite inefficiency in training, shows a slight alignment with human judgment of word similarity.
-
-   - Skip-gram with Negative Sampling:
-
-      - Training Loss/Time: Medium (1.977957)/Moderate (17m 8s)
-      - Spearman's Rank Correlation: Weak negative (-0.118)
-
-      Note: More efficient than Skip-gram but tends to slightly oppose human judgment.
-
-   - GloVe Scratch:
-      - Training Loss/Time: Low (0.724803)/Short (1m 54s)
-      - Spearman's Rank Correlation: Negative (-0.224)
-      
-      Note: Most efficient in training but significantly opposes human judgment of similarity.
-
-   Based on the priority of semantic similarity in the task and considering Spearman's rank correlation, Skip-gram is recommended. Despite its longer training time and higher loss, its weak positive correlation with human judgment of word similarity suggests it may align slightly better with human semantic understanding.
+   - Based on the priority of semantic similarity in the task and considering Spearman's rank correlation, Skip-gram is recommended. 
+   - Despite Skip-gram's longer training time and higher loss, its weak positive correlation with human judgment of word similarity suggests it may align slightly better with human semantic understanding.
 
 - **Application Development**: Developed using Flask, a flexible micro web framework. Flask's simplicity and extensibility make it perfect for creating efficient, scalable web applications.
 
