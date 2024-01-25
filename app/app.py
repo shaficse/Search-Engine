@@ -33,21 +33,21 @@ class Skipgram(nn.Module):
         return loss
         
 # Load model configuration
-with open('word2vec_config.json', 'r') as config_file:
+with open('word2vec_config_skipgram.json', 'r') as config_file:
     config = json.load(config_file)
 
 # Initialize model with loaded configuration
 model = Skipgram(voc_size=config['voc_size'], emb_size=config['emb_size'])
 
 # Load model state
-model_path = 'word2vec_model.pth'
+model_path = 'word2vec_model_skipgram.pth'
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 model.eval()  # Set model to evaluation mode
 
 # Load word2index, index2word, and corpus
-word2index_path = 'word2index.json'
-index2word_path = 'index2word.json'
-corpus_path = 'corpus.txt'
+word2index_path = 'word2index_skipgram.json'
+index2word_path = 'index2word_skipgram.json'
+corpus_path = 'corpus_skipgram.txt'
 
 with open(word2index_path, 'r') as file:
     word2index = json.load(file)

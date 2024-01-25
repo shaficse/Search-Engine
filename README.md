@@ -148,19 +148,19 @@ The Spearman's rank correlation analysis reveals varied performance among differ
 
 | Model                     | Spearman's Rank Correlation |
 |---------------------------|-----------------------------|
-| Skipgram                  |  0.105                       |
-| Skipgram-Neg-Sampling     | -0.118                     |
-| GloVe Scratch             | -0.224                     |
-| GloVe Gensim              | 0.491                       |
+| Skipgram                  |  0.199                     |
+| Skipgram-Neg-Sampling     | 0.043                    |
+| GloVe Scratch             | -0.318                  |
+| GloVe Gensim              | 0.602                      |
 
 
-- Skipgram: Achieved a correlation of 0.105, indicating a weak positive relationship between the model's similarity scores and human judgment.
+- Skipgram: shows a modest positive correlation (0.199), suggesting some alignment with human semantic understanding.
 
-- Skipgram-Neg-Sampling: Registered a correlation of -0.118, suggesting a weak inverse relationship, indicating that the model's assessment of similarity tends to slightly oppose human judgment.
+- Skipgram-Neg-Sampling: has a lower correlation (0.043), indicating a weaker alignment.
 
-- GloVe Scratch: Had a correlation of -0.224, demonstrating a somewhat stronger inverse relationship than the Skipgram-Neg-Sampling model, suggesting its assessments are more contrary to human judgment.
+- GloVe Scratch: presents a negative correlation (-0.318), implying a divergence from human semantic patterns.
 
-- GloVe Gensim: Scored the highest with a correlation of 0.491, signifying a moderate positive correlation with human judgment, making it relatively the most aligned model with human perception among those evaluated.
+- GloVe Gensim: significantly outperforms the other models with a strong positive correlation (0.602), indicating a high level of alignment with human semantic understanding.
 
 The pre-trained GloVe model from Gensim showcases superior performance, significantly aligning with human judgment in word similarities.
 
