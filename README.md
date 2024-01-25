@@ -132,7 +132,7 @@ Comparison of various models on the   `capital-common-countries (semantic)` and 
 |-----------------------------------|-------------|---------------|--------------------|-------------------|
 | Skip-gram                         | 2           | 8.133966         | 0.00%              | 0.00%             |
 | Skip-gram with Negative Sampling  | 2           | 1.977957       | 0.00%              | 0.00%             |
-| GloVe (Custom)                    | 2           | 0.724803        | 0.00%              | 0.00%             |
+| GloVe Scratch                    | 2           | 0.724803        | 0.00%              | 0.00%             |
 | GloVe (Pre-trained Gensim)        | N/A         | N/A           | 53.40%             | 54.97%            |
 
 
