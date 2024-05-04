@@ -82,7 +82,7 @@ The project utilizes the Reuters-21578 Text Categorization Collection from the N
 #### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/shaficse/A1--Search-Engine.git
+   git clone https://github.com/shaficse/Search-Engine.git
    ```
 2. Install the required Python packages:
    ```sh
