@@ -1,5 +1,5 @@
 
-# A1-Search Engine
+# Search Engine
 
 ## Table of Contents
 - [Overview](#overview)
